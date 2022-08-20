@@ -1,0 +1,295 @@
+/* font face */
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(./fonts/Mukta-ExtraLight.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./fonts/Mukta-Light.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/Mukta-Regular.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/Mukta-Medium.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/Mukta-SemiBold.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/Mukta-Bold.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(./fonts/Mukta-ExtraBold.ttf) format("ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131,
+    U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* custom properties */
+:root {
+  --primary-color: #f7b613;
+  --white: #fff;
+  --black: #000;
+  --onyx: rgb(11, 8, 1);
+  --gray: #ccc;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xlg: 1.5rem;
+  --hero-image: url("./img/hero_bg_sm.jpeg");
+  --brand-name-size: 18px;
+}
+
+/* resets */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+}
+
+/* general */
+.hidden {
+  display: none;
+}
+.inline {
+  display: inline;
+}
+.white-fill {
+  stroke: var(--white);
+}
+.black-fill {
+  stroke: var(--black);
+}
+
+/* body */
+body {
+  background-color: var(--gray);
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  user-select: none;
+}
+
+body.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* nav */
+nav {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--space-md);
+  grid-column-start: span 8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(5 * var(--space-md));
+}
+
+.nav_menu {
+  margin-right: var(--space-md);
+}
+
+nav > .brand_name {
+  font-weight: 800;
+  font-size: var(--brand-name-size);
+  background-color: var(--black);
+  padding: var(--space-xs);
+  border-radius: 4px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+nav > .brand_name::after {
+  content: "";
+  border: 1px solid var(--black);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 4px;
+}
+
+/* overlay menu */
+.menu_overlay {
+  position: absolute;
+  background-color: var(--onyx);
+  height: calc(100vh - (5 * var(--space-md)));
+  border-left: 1px solid var(--primary-color);
+  width: 280px;
+  top: 0;
+  right: -300px;
+  z-index: 3;
+  transition: right 0.3s ease-in-out;
+  padding: var(--space-md);
+  overflow: auto;
+}
+
+.overlay_menu_items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay_menu_items > li > a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  align-items: baseline;
+}
+
+.overlay_menu_items > li {
+  margin-bottom: var(--space-xlg);
+}
+
+.overlay_menu_items > li > a .nav_link_icon {
+  stroke: var(--white);
+  margin-left: var(--space-sm);
+  margin-bottom: -2px;
+}
+
+.overlay_menu_items > li > a:visited {
+  color: var(--white);
+}
+
+.overlay_menu_items > li > a:hover,
+.overlay_menu_items > li > a:active {
+  color: var(--primary-color);
+}
+
+/* hero */
+.hero {
+  width: 100vw;
+  height: calc(100vh - (5 * var(--space-md)));
+  background: var(--gray) var(--hero-image) no-repeat right top / cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black);
+  opacity: 0.6;
+}
+
+.hero_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  padding: var(--space-md);
+}
+
+.hero_content .greeting {
+  font-style: italic;
+  font-weight: 100;
+  margin: var(--space-sm);
+}
+
+.hero_content .name {
+  border: 1px solid var(--white);
+  padding: var(--space-sm);
+  font-size: 1.5rem;
+}
+
+.hero_content .tagline {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+.hero_content .tagline > b {
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+
+/* breakpoints */
+@media screen and (min-width: 768px) {
+  :root {
+    --hero-image: url("./img/hero_bg_md.jpeg");
+    --brand-name-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --hero-image: url("./img/hero_bg_lg.jpeg");
+    --brand-name-size: 28px;
+  }
+}
